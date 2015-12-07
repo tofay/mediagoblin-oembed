@@ -1,0 +1,27 @@
+=======================
+mediagoblin-indexedsearch
+=======================
+
+This is a plugin for Gnu Mediagoblin that adds oembed support.
+
+
+Set up the plugin
+========================
+
+1. Clone the repository from GitHub.
+
+    $ git clone https://github.com/tofay/mediagoblin-oembed.git
+
+2. Create a source tarball.
+
+    $ /path/to/mediagoblin/bin/python setup.py sdist
+
+2. Install this into your mediagoblin virtualenv.
+
+    $ /path/to/mediagoblin/bin/pip install dist/mediagoblin-oembed-#VERSION#.tar.gz
+
+3. Enable the mediagoblin-oembed plugin by adding the following line to the ``[plugins]`` section of your mediagoblin_local.ini file.
+
+    [[oembed]]
+
+4. Restart your MediaGoblin instance for the config file changes to be effective.
